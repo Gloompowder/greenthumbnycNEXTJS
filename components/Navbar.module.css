@@ -1,0 +1,162 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2.5rem;
+    background: hsla(0, 0%, 100%, 0.96);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid hsla(120, 20%, 95%, 1);
+    box-shadow: 0 1px 2px rgba(40, 80, 60, 0.02);
+}
+
+.logo {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1a4d3e; /* Deep green accent */
+    letter-spacing: -0.015em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.logo a:hover {
+    opacity: 0.75;
+}
+
+.navbarLinks {
+    display: flex;
+    gap: 2.25rem;
+    align-items: center;
+}
+
+.navbarLinks a {
+    color: hsl(0, 0%, 40%);
+    text-decoration: none;
+    font-weight: 450;
+    font-size: 0.92rem;
+    position: relative;
+    transition: all 0.2s ease;
+    padding: 0.5rem 0;
+}
+
+/* Green underline animation */
+.navbarLinks a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #2a8c5f; /* Vibrant green accent */
+    transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbarLinks a:hover {
+    color: #1a4d3e;
+}
+
+.navbarLinks a:hover::after {
+    width: 100%;
+}
+
+.navbarLinks a[aria-current="page"] {
+    color: #1a4d3e;
+    font-weight: 500;
+}
+
+.navbarLinks a[aria-current="page"]::after {
+    width: 100%;
+    background: #3ab47d; /* Brighter green for active state */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.75rem 1.75rem;
+    }
+
+    .navbarLinks {
+        gap: 1.5rem;
+    }
+
+    .navbarLinks a {
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.75rem 1.25rem;
+    }
+    
+    .navbarLinks {
+        gap: 1.25rem;
+    }
+}
+
+.navbar{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar :visited{
+    color: black;
+    text-decoration: none;
+    text-emphasis: none;
+}
+
+/* Add this to your existing navbar CSS */
+.navButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 40%);
+    font-weight: 450;
+    font-size: 0.92rem;
+    font-family: inherit;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+/* Green underline animation - matches link style */
+.navButton::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #2a8c5f;
+    transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navButton:hover {
+    color: #1a4d3e;
+    background: none;
+}
+
+.navButton:hover::after {
+    width: 100%;
+}
+
+/* Active state if needed */
+.navButton:active {
+    transform: scale(0.98);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navButton {
+        font-size: 0.88rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navButton {
+        font-size: 0.85rem;
+    }
+}

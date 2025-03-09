@@ -1,0 +1,274 @@
+/* Base Styles */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Hero Header */
+  .heroHeader {
+    background: linear-gradient(135deg, #2B593F, #3E8564);
+    color: white;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+  
+  .heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .heroTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+  }
+  
+  .heroSubtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  /* Filters */
+  .controlsContainer {
+    margin: 2rem 0;
+  }
+  
+  /* Updated Filters Section */
+  .filtersGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1:2 ratio between borough and search groups */
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .searchGroup {
+    display: grid;
+    grid-template-columns: 160px 1fr; /* Fixed width for dropdown, remaining space for input */
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .searchInput {
+    width: 100%; /* Take all available space */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .filtersGrid {
+      grid-template-columns: 1fr;
+    }
+    
+    .searchGroup {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Map */
+  .mapContainer {
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+  }
+  
+  /* Garden Grid */
+  .gardenGrid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 2rem 0;
+  }
+  
+  .gardenCard {
+    background: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    border: #b3d8d2 1px solid;
+  }
+  
+  .gardenCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  }
+  
+  .cardContent {
+    padding: 1.5rem;
+  }
+  
+  .gardenName {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #1a2a21;
+  }
+  
+  .gardenMeta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .metaItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #64748b;
+  }
+  
+  .boroughTag {
+    background: #e4e9f0;
+    color: #545887;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Default status */
+  .cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Status badge base styles */
+  .statusBadge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  /* Status variations */
+  .statusBadge.active {
+    background: #d1e5c2;
+    color: #13a000;
+    border: 1px solid #13a000;
+  }
+  
+  .statusBadge.notgreenthumb {
+    background: #f3ffb1;
+    color: #ca8a04;
+    border: 1px solid #ffeb8a;
+  }
+  
+  .statusBadge.defaultStatus {
+    background: #fee2e2;
+    color: #dc2626;
+    border: 1px solid #ffadad;
+  }
+  
+  /* Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .paginationButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #2B593F;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .paginationButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .paginationButton:hover:not(:disabled) {
+    background: #3E8564;
+  }
+  
+  .pageIndicator {
+    color: #64748b;
+  }
+  
+  /* Empty State */
+  .emptyState {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem;
+    color: #64748b;
+  }
+  
+  .emptyIllustration {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .heroHeader {
+      padding: 2rem 1rem;
+    }
+    
+    .heroTitle {
+      font-size: 2rem;
+    }
+    
+    .mapContainer {
+      height: 400px;
+    }
+    
+    .pagination {
+      flex-direction: column;
+    }
+  }
+
+  .hours {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Optional status indicator dot */
+  .openStatus {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .openStatus.open {
+    background-color: #4CAF50;
+  }
+  
+  .openStatus.closed {
+    background-color: #F44336;
+  }
+
+  .filter-controls {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .filter-controls button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background: white;
+  }
+  
+  .filter-controls button.active {
+    background: #4CAF50;
+    color: white;
+    border-color: #45a049;
+  }

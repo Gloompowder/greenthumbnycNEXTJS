@@ -1,0 +1,31 @@
+/* Chart.module.css */
+.chartContainer {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chartCanvasWrapper {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 40px); /* Account for title height */
+  }
+  
+  .chartTitle {
+    margin: 0 0 15px 0;
+    color: #1a4d3e;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  /* Essential for chart sizing */
+  .chartContainer canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }

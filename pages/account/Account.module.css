@@ -1,0 +1,161 @@
+
+.accountContainer {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .accountTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+  }
+  
+  .accountSection {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .profileSection {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  
+  .profilePicture {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .profileImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e0e0e0;
+    transition: opacity 0.2s;
+  }
+  
+  .profileImage:hover {
+    opacity: 0.8;
+  }
+  
+  .accountInfo {
+    flex: 1;
+  }
+  
+  .accountInfoText {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #eee;
+  }
+  
+  .accountInput {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .accountInput:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 0 2px rgba(76,175,80,0.2);
+  }
+  
+  .accountActions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .accountButton {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1rem;
+  }
+  
+  .accountButton:hover {
+    background: #45a049;
+  }
+  
+  .dangerButton {
+    background: #e74c3c;
+  }
+  
+  .dangerButton:hover {
+    background: #c0392b;
+  }
+  
+  /* Confirmation dialog styles */
+  .confirmationDialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .confirmationContent {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .confirmationButtons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .accountContainer {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    .profileSection {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .accountActions {
+      flex-direction: column;
+    }
+  }

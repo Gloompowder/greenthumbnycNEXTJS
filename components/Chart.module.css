@@ -1,0 +1,19 @@
+/* Chart.module.css */
+
+/* Styling the chart container */
+.chartContainer {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background-color: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for the chart container */
+  .chartContainer:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  

@@ -1,0 +1,131 @@
+/* 404.module.css */
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8faf7;
+    padding: 2rem;
+  }
+  
+  .content {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+  }
+  
+  .illustration {
+    margin-bottom: 2rem;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .gardenSvg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .pot {
+    fill: #a3b18a;
+    stroke: #588157;
+    stroke-width: 2;
+  }
+  
+  .plant {
+    fill: #3a5a40;
+    opacity: 0.8;
+  }
+  
+  .questionMark {
+    fill: #1a4d3e;
+  }
+  
+  .questionText {
+    fill: white;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Arial;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #1a4d3e;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .subtitle {
+    color: #4a4a4a;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  .homeButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    background-color: #1a4d3e;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .homeButton:hover {
+    background-color: #143d31;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(26, 77, 62, 0.15);
+  }
+  
+  .arrowIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .suggestions {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  .links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .links a {
+    color: #3ab47d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .links a:hover {
+    color: #1a4d3e;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+    
+    .homeButton {
+      padding: 0.75rem 1.5rem;
+    }
+    
+    .links {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }

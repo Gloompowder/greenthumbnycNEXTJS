@@ -1,0 +1,161 @@
+/* About.module.css */
+.aboutContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .heroSection {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f0fff4 0%, #c6f6d5 100%);
+    border-radius: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .heroContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  
+  .heroTitle {
+    font-size: 2.75rem;
+    line-height: 1.2;
+    color: #1a2e35;
+  }
+  
+  .titleHighlight {
+    color: #2F855A;
+    font-weight: 700;
+  }
+  
+  .heroIllustration {
+    width: 200px;
+    height: 200px;
+    background: url('data:image/svg+xml,...') no-repeat;
+    opacity: 0.9;
+  }
+  
+  .cardSection {
+    margin: 2rem 0;
+  }
+  
+  .infoCard {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+  
+  .cardTitle {
+    font-size: 1.25rem;
+    color: #2D3748;
+  }
+  
+  .titleIcon {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+  }
+  
+  .gridSection {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 3rem 0;
+  }
+  
+  .featureCard {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .featureCard:hover {
+    transform: translateY(-3px);
+  }
+  
+  .cardIcon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .linkGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .featureLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2F855A;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: #f0fff4;
+    transition: all 0.2s ease;
+  }
+  
+  .featureLink:hover {
+    background: #c6f6d5;
+    color: #1a2e35;
+  }
+  
+  .linkArrow {
+    opacity: 0.7;
+    transition: transform 0.2s ease;
+  }
+  
+  .featureLink:hover .linkArrow {
+    transform: translateX(3px);
+  }
+  
+  .ctaSection {
+    background: #F7FAFC;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 4rem 0;
+    text-align: center;
+  }
+  
+  .ctaFeatures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .featureItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .featureBadge {
+    font-size: 1.25rem;
+  }
+  
+  .pageFooter {
+    text-align: center;
+    padding: 2rem;
+    color: #718096;
+    border-top: 1px solid #eaeaea;
+    margin-top: 4rem;
+  }
+

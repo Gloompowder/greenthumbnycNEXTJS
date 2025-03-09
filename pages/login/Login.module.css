@@ -1,0 +1,168 @@
+/* Login.module.css */
+.container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f9fc;
+  }
+  
+  .formWrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08);
+  }
+  
+  .title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a4d3e;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .label {
+    font-size: 0.875rem;
+    color: #525f7f;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  
+  .input {
+    padding: 0.875rem;
+    border: 1px solid #e0e8f3;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: #f6f9fc;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #1a4d3e;
+    box-shadow: 0 0 0 2px rgba(26,77,62,0.1);
+    background-color: white;
+  }
+  
+  .button {
+    padding: 1rem;
+    background-color: #1a4d3e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+  }
+  
+  .button:hover {
+    background-color: #143d31;
+    transform: translateY(-1px);
+  }
+  
+  .forgotPassword {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .forgotPassword a {
+    color: #1a4d3e;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .forgotPassword a:hover {
+    color: #143d31;
+  }
+  
+  .signupLink {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .signupLink a {
+    color: #1a4d3e;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .signupLink a:hover {
+    color: #143d31;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 480px) {
+    .formWrapper {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  /* Login.module.css and Signup.module.css */
+.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .loading {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  
+  .spinner {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 0.8s linear infinite;
+    margin-right: 0.5rem;
+  }
+  
+  .loading::after {
+    content: " ";
+    position: absolute;
+    right: -25px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }

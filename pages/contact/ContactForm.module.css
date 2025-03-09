@@ -1,0 +1,142 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #1a2a21;
+  }
+  
+  .header p {
+    color: #64748b;
+    font-size: 1.1rem;
+  }
+  
+  .form {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  }
+  
+  .formGroup {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: #94a3b8;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    background: white;
+    padding: 0 0.5rem;
+  }
+  
+  .input, .textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+  }
+  
+  .input:focus, .textarea:focus {
+    outline: none;
+    border-color: #2B593F;
+  }
+  
+  .input:focus ~ .label,
+  .input:not(:placeholder-shown) ~ .label,
+  .textarea:focus ~ .label,
+  .textarea:not(:placeholder-shown) ~ .label {
+    transform: translateY(-1.5rem) scale(0.9);
+    color: #2B593F;
+  }
+  
+  .textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #2B593F, #3E8564);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    position: relative;
+  }
+  
+  .submitButton:hover:not(:disabled) {
+    transform: translateY(-1px);
+    opacity: 0.95;
+  }
+  
+  .submitButton:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .spinner {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    right: 1rem;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .successMessage, .errorMessage {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .successMessage {
+    background: #d1e5c2;
+    color: #2B593F;
+  }
+  
+  .errorMessage {
+    background: #ffe4e6;
+    color: #dc2626;
+  }
+  
+  .honeypot {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .honeypot input {
+    width: 0;
+    height: 0;
+    padding: 0;
+    border: 0;
+  }
